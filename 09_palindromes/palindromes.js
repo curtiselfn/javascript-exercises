@@ -1,4 +1,7 @@
-const palindromes = function () {
+const palindromes = function (str) {
+    let originalStr = str.toLowerCase().replace(/[^a-z0-9]/gi, '')
+    let newStr = str.toLowerCase().replace(/[^a-z0-9]/gi, '').split('').reverse().join('');
+    return newStr === originalStr;
 
 };
 
