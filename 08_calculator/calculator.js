@@ -6,12 +6,23 @@ const subtract = function (firstNumber, secondNumber) {
   return firstNumber - secondNumber;
 };
 
-const sum = function (firstNumber, secondNumber) {
-  return firstNumber + secondNumber;
+const sum = function (numbers) {
+  if (numbers.length === 0) {
+    return 0;
+  }
+  let result = 0;
+  for (let number of numbers) {
+    result += number;
+  }
+  return result;
 };
 
-const multiply = function (firstNumber, secondNumber) {
-  return firstNumber * secondNumber
+const multiply = function (numbers) {
+  let result = 1;
+  for (let number of numbers) {
+    result *= number;
+  }
+  return result;
 };
 
 const power = function (firstNumber, secondNumber) {
